@@ -26,6 +26,10 @@ Follow these instructions to get started with DataDoctor.
 ```
 pip install DataDoctor
 ```
+or
+```
+!pip install DataDoctor
+```
 
 ## Usage
 
