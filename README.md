@@ -24,7 +24,7 @@ Follow these instructions to get started with DataDoctor.
 ## Installation
 
 ```
-pip instal DataDoctor
+pip install DataDoctor
 ```
 
 ## Usage
