@@ -8,7 +8,6 @@ from fuzzywuzzy import fuzz
 import re
 import warnings
 import chardet
-from data_doctor.normalizer import DataDoctor as DataNormalizer
 from data_doctor.utils import detect_encoding
 
 warnings.filterwarnings("ignore")
