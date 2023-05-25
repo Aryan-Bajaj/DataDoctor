@@ -1,4 +1,4 @@
-# DataDoctor
+# DataDoctor[Beta]
 
 DataDoctor is a Python package for data cleaning and preprocessing. It provides various methods to treat common issues in data such as missing values, duplicate records, inconsistent data formats, outliers, inconsistent naming conventions, data entry errors, and more. The package uses popular libraries such as pandas, numpy, scikit-learn, fuzzywuzzy, and chardet.
 
@@ -15,7 +15,6 @@ DataDoctor is a Python package for data cleaning and preprocessing. It provides 
 
 ## Prerequisites
 
-Better to have:
 - Python 3.6 or higher
 
 ## Getting Started
@@ -38,20 +37,30 @@ from data_doctor import DataDoctor
 doctor = DataDoctor()
 
 # Load your data in .CSV format
-data = Load_Your_Data.csv
+data = Your_Data.csv
 
 # Treat the data
 doctor.load_data(data)
 doctor.treat_missing_data()
 doctor.treat_duplicate_records()
+doctor.treat_inconsistent_data_formats()
+doctor.treat_inaccurate_data_entries()
+doctor.treat_outliers()
+doctor.treat_inconsistent_naming_conventions()
+doctor.treat_data_entry_errors()
+doctor.treat_inconsistent_units_of_measurement()
+doctor.treat_incorrect_data_types()
+doctor.treat_invalid_values()
+doctor.treat_inconsistent_or_conflicting_values()
+doctor.treat_encoding_errors()
+doctor.treat_inconsistent_date_and_time_formats()
+doctor.treat_inconsistent_variable_names()
+doctor.treat_inconsistent_capitalization_or_punctuation()
+doctor.treat_spelling_or_typographical_errors()
+
 
 # Generate a report
 doctor.generate_report()
-```
-or
-```
-var_name = DataDoctor()
-var_name.treat(var_name, inplace=True)
 ```
 
 ## Features
