@@ -85,7 +85,6 @@ doctor.generate_report()
 - Inconsistent variable names treatment
 - Inconsistent capitalization or punctuation treatment
 - Spelling or typographical errors treatment
-- Data normalization issues treatment
 
 ## Algorithm
 
