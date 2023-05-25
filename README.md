@@ -37,17 +37,21 @@ from data_doctor import DataDoctor
 # Create an instance of DataDoctor
 doctor = DataDoctor()
 
-# Load your data
-data = ...
+# Load your data in .CSV format
+data = Load_Your_Data.csv
 
 # Treat the data
 doctor.load_data(data)
 doctor.treat_missing_data()
 doctor.treat_duplicate_records()
-...
 
 # Generate a report
 doctor.generate_report()
+```
+or
+```
+var_name = DataDoctor()
+var_name.treat(var_name, inplace=True)
 ```
 
 ## Features
