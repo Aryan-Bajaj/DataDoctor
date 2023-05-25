@@ -15,6 +15,7 @@ DataDoctor is a Python package for data cleaning and preprocessing. It provides 
 
 ## Prerequisites
 
+Better to have:
 - Python 3.6 or higher
 
 ## Getting Started
