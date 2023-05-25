@@ -21,10 +21,10 @@ setup(
         'chardet'
     ],
     classifiers=[
-        "Development Status :: 1 - Beta",
-        "Intended Audience :: Data Analyst and Data Engineers",
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent and Windows",
+        "Operating System :: OS Independent",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
