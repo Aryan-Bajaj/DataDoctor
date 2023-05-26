@@ -33,17 +33,22 @@ or
 
 ## Usage
 
+### Import the DataDoctor package
 ```
-# Import the DataDoctor package
 from data_doctor import DataDoctor
+```
 
-# Create an instance of DataDoctor
+### Create an instance of DataDoctor
+```
 doctor = DataDoctor()
-
-# Load your data in .CSV format
+```
+### Load your data in .CSV format
+```
 data = Your_Data.csv
+```
 
-# Treat the data
+### Treat the data
+```
 doctor.load_data(data)
 doctor.treat_missing_data()
 doctor.treat_duplicate_records()
@@ -61,9 +66,10 @@ doctor.treat_inconsistent_date_and_time_formats()
 doctor.treat_inconsistent_variable_names()
 doctor.treat_inconsistent_capitalization_or_punctuation()
 doctor.treat_spelling_or_typographical_errors()
+```
 
-
-# Generate a report
+### Generate a report
+```
 doctor.generate_report()
 ```
 
