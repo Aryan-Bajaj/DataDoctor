@@ -72,7 +72,7 @@ data = Your_Data.csv
 
 The `DataDoctor` class provides a variety of methods for treating common data issues. These methods include:
 
-1. [`load_data(data)`]: loads data into the `DataDoctor` object for further data treatment and analysis.
+1. [`load_data(data)`](#load_data): loads data into the `DataDoctor` object for further data treatment and analysis.
 2. [`treat_missing_data()`](#treat-missing-data): treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
 3. [`treat_duplicate_records()`](#treat-duplicate-records): treats duplicate records in the loaded dataset by removing them.
 4. [`treat_inconsistent_data_formats()`](#treat-inconsistent-data-formats): treats inconsistent data formats in the loaded data by converting all values in string columns to lowercase.
