@@ -72,23 +72,23 @@ data = Your_Data.csv
 
 The `DataDoctor` class provides a variety of methods for treating common data issues. These methods include:
 
-1. [`load_data(data)`](#doctor.load_data(data)): loads data into the `DataDoctor` object for further data treatment and analysis.
-2. [`treat_missing_data()`](#treat-missing-data): treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
-3. [`treat_duplicate_records()`](#treat-duplicate-records): treats duplicate records in the loaded dataset by removing them.
-4. [`treat_inconsistent_data_formats()`](#treat-inconsistent-data-formats): treats inconsistent data formats in the loaded data by converting all values in string columns to lowercase.
-5. [`treat_inaccurate_data_entries()`](#treat-inaccurate-data-entries): treats inaccurate data entries in string columns of the loaded data by replacing them with the most frequent value in the column.
-6. [`treat_outliers()`](#treat-outliers): treats outliers in numerical columns of the loaded data by removing them using the Isolation Forest algorithm.
-7. [`treat_inconsistent_naming_conventions()`](#treat-inconsistent-naming-conventions): treats inconsistent naming conventions in the loaded data by converting all column names to lowercase.
-8. [`treat_data_entry_errors()`](#treat-data-entry-errors): treats data entry errors in string columns of the loaded data by replacing incorrect or similar-but-incorrect entries with the most similar valid value.
-9. [`treat_inconsistent_units_of_measurement()`](#treat-inconsistent-units-of-measurement): treats inconsistent units of measurement in numerical columns of the loaded data by converting the values to a consistent unit of measurement.
-10. [`treat_incorrect_data_types()`](#treat-incorrect-data-types): treats incorrect data types in the loaded data by converting string columns that should contain numeric data to their appropriate numeric data type.
-11. [`treat_invalid_values()`](#treat-invalid-values): treats invalid values in numerical columns of a dataset by replacing them with np.nan (a missing value indicator).
-12. [`treat_inconsistent_or_conflicting_values()`](#treat-inconsistent-or-conflicting-values): treats inconsistent or conflicting values in string columns of the loaded data by resolving cases where there are conflicting values within the same entry or inconsistent values across different entries in a column.
-13. [`treat_encoding_errors()`](#treat-encoding-errors): treats encoding errors in string columns of the loaded dataset by determining the encoding of each string column and then decoding the values using the detected encoding.
-14. [`treat_inconsistent_date_and_time_formats()`](#treat-inconsistent-date-and-time-formats): treats inconsistent date and time formats in string columns of a dataset by converting the values to a consistent date and time format.
-15. [`treat_inconsistent_variable_names()`](#treat-inconsistent-variable-names): treats inconsistent variable names in the loaded data by replacing non-word characters with underscores and converting them to lowercase.
-16. [`treat_inconsistent_capitalization_or_punctuation()`](#treat-inconsistent-capitalization-or-punctuation): treats inconsistent capitalization or punctuation in column names within the loaded dataset by replacing non-word characters with underscores and converting them to lowercase.
-17. [`treat_spelling_or_typographical_errors()`](#treat-spelling-or-typographical-errors): treats spelling or typographical errors in string columns of the loaded data by replacing incorrect or misspelled values with the most similar valid value from a given set of valid names.
+1. [`load_data(data)`]: loads data into the `DataDoctor` object for further data treatment and analysis.
+2. [`treat_missing_data()`]: treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
+3. [`treat_duplicate_records()`]: treats duplicate records in the loaded dataset by removing them.
+4. [`treat_inconsistent_data_formats()`]: treats inconsistent data formats in the loaded data by converting all values in string columns to lowercase.
+5. [`treat_inaccurate_data_entries()`]: treats inaccurate data entries in string columns of the loaded data by replacing them with the most frequent value in the column.
+6. [`treat_outliers()`]: treats outliers in numerical columns of the loaded data by removing them using the Isolation Forest algorithm.
+7. [`treat_inconsistent_naming_conventions()`]: treats inconsistent naming conventions in the loaded data by converting all column names to lowercase.
+8. [`treat_data_entry_errors()`]: treats data entry errors in string columns of the loaded data by replacing incorrect or similar-but-incorrect entries with the most similar valid value.
+9. [`treat_inconsistent_units_of_measurement()`]: treats inconsistent units of measurement in numerical columns of the loaded data by converting the values to a consistent unit of measurement.
+10. [`treat_incorrect_data_types()`]: treats incorrect data types in the loaded data by converting string columns that should contain numeric data to their appropriate numeric data type.
+11. [`treat_invalid_values()`]: treats invalid values in numerical columns of a dataset by replacing them with np.nan (a missing value indicator).
+12. [`treat_inconsistent_or_conflicting_values()`]: treats inconsistent or conflicting values in string columns of the loaded data by resolving cases where there are conflicting values within the same entry or inconsistent values across different entries in a column.
+13. [`treat_encoding_errors()`]: treats encoding errors in string columns of the loaded dataset by determining the encoding of each string column and then decoding the values using the detected encoding.
+14. [`treat_inconsistent_date_and_time_formats()`]: treats inconsistent date and time formats in string columns of a dataset by converting the values to a consistent date and time format.
+15. [`treat_inconsistent_variable_names()`]: treats inconsistent variable names in the loaded data by replacing non-word characters with underscores and converting them to lowercase.
+16. [`treat_inconsistent_capitalization_or_punctuation()`]: treats inconsistent capitalization or punctuation in column names within the loaded dataset by replacing non-word characters with underscores and converting them to lowercase.
+17. [`treat_spelling_or_typographical_errors()`]: treats spelling or typographical errors in string columns of the loaded data by replacing incorrect or misspelled values with the most similar valid value from a given set of valid names.
 
 Each method has its own advantages and benefits in improving data quality and consistency. The `DataDoctor` class
 
