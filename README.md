@@ -4,6 +4,20 @@
 
 [![Python Version](https://img.shields.io/badge/python-3.6%20%7C%203.7%20%7C%203.8%20%7C%203.9-blue)](https://www.python.org/downloads/)
 
+## Index
+- [Built With](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#prerequisites)
+- [Prerequisites](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#prerequisites)
+- [Features](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#features)
+- [Getting Started](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#getting-started)
+- [Installation](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#installation)
+- [Usage](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#usage)
+- [Treat the data (Codes & Explanations)](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#treat-the-data)
+- [Algorithm](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#algorithm)
+- [Feedback](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#feedback)
+- [Contribution](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#contribution)
+- [Author](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#author)
+- [License](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#license)
+
 ## Built With
 
 - `pandas` - It is a Python library for **data analysis and manipulation**  that provides fast, flexible, and expressive data structures such as DataFrame and Series.
@@ -19,22 +33,23 @@
 
 ## Features
 
-- Missing data treatment
-- Duplicate records treatment
-- Inconsistent data formats treatment
-- Inaccurate data entries treatment
-- Outliers treatment
-- Inconsistent naming conventions treatment
-- Data entry errors treatment
-- Inconsistent units of measurement treatment
-- Incorrect data types treatment
-- Invalid values treatment
-- Inconsistent or conflicting values treatment
-- Encoding errors treatment
-- Inconsistent date and time formats treatment
-- Inconsistent variable names treatment
-- Inconsistent capitalization or punctuation treatment
-- Spelling or typographical errors treatment
+- [Missing data treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-missing-data)
+- [Duplicate records treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-duplicate-records)
+- [Inconsistent data formats treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-data-formats)
+- [Inaccurate data entries treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inaccurate-data-entries)
+- [Outliers treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-outliers)
+- [Inconsistent naming conventions treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-naming-conventions)
+- [Data entry errors treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-data-entry-errors)
+- [Inconsistent units of measurement treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-units-of-measurement)
+- [Incorrect data types treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-incorrect-data-types)
+- [Invalid values treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-invalid-values)
+- [Inconsistent or conflicting values treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-or-conflicting-values)
+- [Encoding errors treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-encoding-errors)
+- [Inconsistent date and time formats treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-date-and-time-formats)
+- [Inconsistent variable names treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-variable-names)
+- [Inconsistent capitalization or punctuation treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-capitalization-or-punctuation)
+- [Spelling or typographical errors treatment](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-spelling-or-typographical-errors)
+- [Report Generation](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#generate-a-report)
 
 ## Getting Started
 
@@ -68,7 +83,7 @@ data = Your_Data.csv
 
 ### Treat the data
 
-### Codes & Explanations
+## Codes & Explanations
 
 The `DataDoctor` class provides a variety of methods for treating common data issues. These methods include:
 
@@ -88,6 +103,7 @@ The `DataDoctor` class provides a variety of methods for treating common data is
 14. [`treat_inconsistent_variable_names()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-variable-names): treats inconsistent variable names in the loaded data by replacing non-word characters with underscores and converting them to lowercase.
 15. [`treat_inconsistent_capitalization_or_punctuation()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-capitalization-or-punctuation): treats inconsistent capitalization or punctuation in column names within the loaded dataset by replacing non-word characters with underscores and converting them to lowercase.
 16. [`treat_spelling_or_typographical_errors()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-spelling-or-typographical-errors): treats spelling or typographical errors in string columns of the loaded data by replacing incorrect or misspelled values with the most similar valid value from a given set of valid names.
+17. [`generate_report()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#generate-a-report): It generates a report that provides information about the data treatment steps performed on the loaded data. It gives an overview of the issues addressed and the changes made to the data.
 
 Each method has its own advantages and benefits in improving data quality and consistency. The `DataDoctor` class offers a comprehensive toolkit for data treatment and cleaning.
 
