@@ -85,7 +85,7 @@ data = Your_Data.csv
 
 ## Codes & Explanations
 
-The `DataDoctor` class provides a variety of methods for treating common data issues. These methods include:
+The `DataDoctor()` class provides a variety of methods for treating common data issues. These methods include:
 
 1. [`treat_missing_data()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-missing-data): treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
 2. [`treat_duplicate_records()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-duplicate-records): treats duplicate records in the loaded dataset by removing them.
