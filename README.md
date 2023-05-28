@@ -72,22 +72,22 @@ data = Your_Data.csv
 
 The `DataDoctor` class provides a variety of methods for treating common data issues. These methods include:
 
-1. [`treat_missing_data()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--loading-the-data-into-the-datadoctor-class): treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
-2. `treat_duplicate_records()`: treats duplicate records in the loaded dataset by removing them.
-3. `treat_inconsistent_data_formats()`: treats inconsistent data formats in the loaded data by converting all values in string columns to lowercase.
-4. `treat_inaccurate_data_entries()`: treats inaccurate data entries in string columns of the loaded data by replacing them with the most frequent value in the column.
-5. `treat_outliers()`: treats outliers in numerical columns of the loaded data by removing them using the Isolation Forest algorithm.
-6. `treat_inconsistent_naming_conventions()`: treats inconsistent naming conventions in the loaded data by converting all column names to lowercase.
-7. `treat_data_entry_errors()`: treats data entry errors in string columns of the loaded data by replacing incorrect or similar-but-incorrect entries with the most similar valid value.
-8. `treat_inconsistent_units_of_measurement()`: treats inconsistent units of measurement in numerical columns of the loaded data by converting the values to a consistent unit of measurement.
-9. `treat_incorrect_data_types()`: treats incorrect data types in the loaded data by converting string columns that should contain numeric data to their appropriate numeric data type.
-10. `treat_invalid_values()`: treats invalid values in numerical columns of a dataset by replacing them with np.nan (a missing value indicator).
-11. `treat_inconsistent_or_conflicting_values()`: treats inconsistent or conflicting values in string columns of the loaded data by resolving cases where there are conflicting values within the same entry or inconsistent values across different entries in a column.
-12. `treat_encoding_errors()`: treats encoding errors in string columns of the loaded dataset by determining the encoding of each string column and then decoding the values using the detected encoding.
-13. `treat_inconsistent_date_and_time_formats()`: treats inconsistent date and time formats in string columns of a dataset by converting the values to a consistent date and time format.
-14. `treat_inconsistent_variable_names()`: treats inconsistent variable names in the loaded data by replacing non-word characters with underscores and converting them to lowercase.
-15. `treat_inconsistent_capitalization_or_punctuation()`: treats inconsistent capitalization or punctuation in column names within the loaded dataset by replacing non-word characters with underscores and converting them to lowercase.
-16. `treat_spelling_or_typographical_errors()`: treats spelling or typographical errors in string columns of the loaded data by replacing incorrect or misspelled values with the most similar valid value from a given set of valid names.
+1. [`treat_missing_data()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-missing-data): treats missing data in the loaded dataset by applying an imputation technique based on the data type of each column.
+2. [`treat_duplicate_records()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-duplicate-records): treats duplicate records in the loaded dataset by removing them.
+3. [`treat_inconsistent_data_formats()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-data-formats): treats inconsistent data formats in the loaded data by converting all values in string columns to lowercase.
+4. [`treat_inaccurate_data_entries()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inaccurate-data-entries): treats inaccurate data entries in string columns of the loaded data by replacing them with the most frequent value in the column.
+5. [`treat_outliers()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-outliers): treats outliers in numerical columns of the loaded data by removing them using the Isolation Forest algorithm.
+6. [`treat_inconsistent_naming_conventions()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-naming-conventions): treats inconsistent naming conventions in the loaded data by converting all column names to lowercase.
+7. [`treat_data_entry_errors()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-data-entry-errors): treats data entry errors in string columns of the loaded data by replacing incorrect or similar-but-incorrect entries with the most similar valid value.
+8. [`treat_inconsistent_units_of_measurement()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-units-of-measurement): treats inconsistent units of measurement in numerical columns of the loaded data by converting the values to a consistent unit of measurement.
+9. [`treat_incorrect_data_types()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-incorrect-data-types): treats incorrect data types in the loaded data by converting string columns that should contain numeric data to their appropriate numeric data type.
+10. [`treat_invalid_values()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-invalid-values): treats invalid values in numerical columns of a dataset by replacing them with np.nan (a missing value indicator).
+11. [`treat_inconsistent_or_conflicting_values()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-or-conflicting-values): treats inconsistent or conflicting values in string columns of the loaded data by resolving cases where there are conflicting values within the same entry or inconsistent values across different entries in a column.
+12. [`treat_encoding_errors()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-encoding-errors): treats encoding errors in string columns of the loaded dataset by determining the encoding of each string column and then decoding the values using the detected encoding.
+13. [`treat_inconsistent_date_and_time_formats()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-date-and-time-formats): treats inconsistent date and time formats in string columns of a dataset by converting the values to a consistent date and time format.
+14. [`treat_inconsistent_variable_names()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-variable-names): treats inconsistent variable names in the loaded data by replacing non-word characters with underscores and converting them to lowercase.
+15. [`treat_inconsistent_capitalization_or_punctuation()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-inconsistent-capitalization-or-punctuation): treats inconsistent capitalization or punctuation in column names within the loaded dataset by replacing non-word characters with underscores and converting them to lowercase.
+16. [`treat_spelling_or_typographical_errors()`](https://github.com/Aryan-Bajaj/DataDoctor/tree/main#--treatment-of-spelling-or-typographical-errors): treats spelling or typographical errors in string columns of the loaded data by replacing incorrect or misspelled values with the most similar valid value from a given set of valid names.
 
 Each method has its own advantages and benefits in improving data quality and consistency. The `DataDoctor` class offers a comprehensive toolkit for data treatment and cleaning.
 
@@ -123,7 +123,7 @@ Advantages:
 - Retaining valuable information - The imputation techniques used in this method estimate missing values based on the available data, allowing you to retain valuable information that would have been lost if you simply removed rows with missing values.
 - Preserving the structure of the dataset - By replacing missing values with estimated values, the overall structure of the dataset is maintained, which can be crucial for maintaining relationships between variables.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 - Ensure data completeness - Missing data can introduce bias and affect the accuracy of your analysis. This method helps handle missing values and ensures your dataset is complete.
 - Maintain data integrity - Instead of discarding rows with missing values, treating missing data allows you to retain the maximum amount of information from your dataset, improving the accuracy of your analysis.
@@ -145,7 +145,7 @@ Advantages:
 - Efficient Data Analysis - Duplicate records can skew statistical measures, affect aggregations, and unnecessarily increase the computational load. Removing duplicates ensures that data analysis is based on the correct and representative data points, leading to more efficient and meaningful results.
 - Error Identification - The number of duplicate records treated is reported, providing valuable insights into the quality of the dataset. This information can help identify potential issues in data collection, integration, or storage processes.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `treat_duplicate_records()` method from `DataDoctor()` provides a convenient and automated way to handle duplicate records in a dataset. It saves time and effort compared to manually identifying and removing duplicates. By using this feature, you can ensure data quality, consistency, and accuracy, leading to more reliable analysis and decision-making based on clean and unique data.
 
@@ -174,7 +174,7 @@ Advantages and Benefits:
 - Enhanced Data Understanding - By normalising the data formats, it becomes easier to understand and interpret the dataset. Inconsistent capitalisation can make it challenging to identify unique values or detect patterns, but with a consistent format, you can gain clearer insights from the data.
 - Compatibility - The consistent data format achieved through this method ensures compatibility with other data processing operations and algorithms. It eliminates potential issues caused by variations in capitalisation when integrating or merging datasets.
 
-Why use This Feature from DataDoctor():
+Why use This Feature from `DataDoctor()`:
 
 The `treat_inconsistent_data_formats()` method is a valuable feature provided by the `DataDoctor()` class. Using this feature, you can easily address inconsistent capitalisation within string values, improving data quality, consistency, and ease of analysis. It helps you overcome common challenges associated with inconsistent data formats and ensures compatibility with various data processing tasks. Incorporating this feature as part of your data treatment workflow can significantly enhance the reliability and usability of your dataset.
 
@@ -195,7 +195,7 @@ Advantages and Benefits:
 - Consistency - The method promotes consistency in the dataset by enforcing valid values for string columns. It ensures that the data adheres to predefined rules or standards, making it easier to work with and reducing potential errors caused by inconsistent or conflicting values.
 - Data Analysis and Modeling - By cleaning inaccurate data entries, the method enhances the quality of data used for analysis and modeling tasks. More accurate and reliable data leads to better insights, decision-making, and model performance.
 
-Why use This Feature from DataDoctor():
+Why use This Feature from `DataDoctor()`:
 
 While the `treat_inaccurate_data_entries()` method is effective in treating inaccurate data entries, it relies on the assumption that there are predefined valid values for each string column. If valid values are not known or cannot be determined, alternative data treatment approaches may be necessary.
 
@@ -221,7 +221,7 @@ Advantages:
 - Robust Modelling - Outliers can significantly impact statistical models, leading to poor model performance or biased results. By treating outliers, the `treat_outliers()` method helps in building more robust and reliable models that generalise well to unseen data.
 - Preservation of Data Distribution - The Isolation Forest algorithm used in this method is effective at identifying outliers while preserving the underlying distribution of the data. This ensures that the data structure and patterns remain intact after outlier treatment.
 
-Why use this Feature from DataDoctor():
+Why use this Feature from `DataDoctor()`:
 
 The `treat_outliers()` method provides a convenient way to handle outliers within numerical columns of a dataset. Outliers can be detrimental to the accuracy and reliability of data analysis and modelling tasks. By using this feature from `DataDoctor()`, you can easily detect and remove outliers, ensuring that your data is clean, representative, and suitable for further analysis or modelling purposes. The method's integration within the `DataDoctor()` class allows for a comprehensive and systematic treatment of various data issues, providing a streamlined workflow for data preprocessing and quality improvement.
 
@@ -245,7 +245,7 @@ Advantages:
 - Compatibility - Standardised column names enhance compatibility with other software tools and programming languages. Many programming languages and libraries prefer lowercase naming conventions, so converting column names to lowercase increases interoperability.
 - Code Readability - Lowercase column names tend to be more readable in code and improve code clarity. Consistent naming conventions make it easier for other programmers or team members to understand and collaborate on the codebase.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `treat_inconsistent_naming_conventions()` feature from DataDoctor is beneficial in data preprocessing and data cleaning tasks. By applying this method, you can ensure that your dataset has consistent and standardised column names, which is essential for maintaining data quality and enabling smooth data analysis and manipulation.
 
@@ -271,7 +271,7 @@ The treat_data_entry_errors() method offers several advantages in the data treat
 - Flexible Application - The method is designed to work specifically with string columns, making it suitable for datasets that involve textual data or categorical variables.
 - Customizability - The method can be easily customised or extended to incorporate domain-specific valid values or specific data entry error patterns.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `treat_data_entry_errors()` feature from `DataDoctor()` is beneficial in scenarios where the dataset contains string columns with potential data entry errors. By utilising this feature, you can:
 
@@ -298,7 +298,7 @@ Advantage:
 
 Treating inconsistent units of measurement is important because it brings uniformity to the data, allowing for meaningful comparisons and analysis. By applying a conversion factor, this method ensures that all numerical values in the dataset are expressed in a single unit, making it easier to interpret and analyse the data.
 
-Why use this feature from DataDoctor:
+Why use this feature from `DataDoctor()`:
 
 Using the `treat_inconsistent_units_of_measurement()` feature from the `DataDoctor()` class provides several benefits:
 
@@ -324,7 +324,7 @@ Advantages:
 - Preventing Errors - Treating incorrect data types helps prevent potential errors that may arise from using inappropriate data types. It reduces the risk of unexpected behaviour or inconsistencies when performing calculations or applying mathematical operations on the data.
 - Simplified Data Handling - By correctly assigning the appropriate data types, it simplifies data handling and facilitates downstream operations. It allows for seamless integration with libraries and algorithms that expect specific data types, enhancing compatibility and ease of use.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The treat_incorrect_data_types() feature from DataDoctor offers an automated and systematic approach to address the issue of incorrect data types in a dataset. By utilising this feature, you can benefit from the following:
 
@@ -333,7 +333,7 @@ The treat_incorrect_data_types() feature from DataDoctor offers an automated and
 - Consistency across Columns - The method operates across all columns, consistently identifying and converting inappropriate data types throughout the dataset. This ensures uniformity and avoids inconsistencies in data types across different columns.
 - Integration with Data Treatment Workflow - The treat_incorrect_data_types() method is part of the broader set of data treatment functionalities provided by the DataDoctor class. It can be seamlessly integrated into your data preprocessing pipeline alongside other data treatment methods, enabling comprehensive and systematic data cleaning and preparation.
 
-### - Treatment of Incorrect Data Types:
+### - Treatment of Invalid Values:
 
 The `treat_invalid_values(`) method is a feature the `DataDoctor()` class provides in the code. This method is used to treat invalid values in numerical columns of a dataset. 
 
@@ -351,7 +351,7 @@ Advantages:
 - Data Consistency - Treating invalid values helps maintain dataset consistency. By identifying and addressing outliers or values that don't adhere to the data's expected range, the method contributes to a more consistent and reliable dataset.
 - Preprocessing for Machine Learning - Invalid values can be problematic when training machine learning models. By treating these values, the method prepares the data for machine learning algorithms, ensuring that the models receive valid input and preventing potential errors during the training or prediction phase.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `treat_invalid_values()` feature from the `DataDoctor()` class offers a convenient and reliable way to handle invalid values in numerical columns. By utilising this feature, you can:
 
@@ -374,7 +374,7 @@ Advantage:
 - Improved data analysis - Consistent values enable better analysis and interpretation of the data. You can avoid skewed insights or incorrect conclusions based on conflicting values by resolving inconsistencies.
 - Enhanced data integration - When merging or integrating data from different sources, inconsistent or conflicting values can cause challenges. This method helps align values across different entries, making the integration process smoother and more reliable.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 - Inconsistent or conflicting values in string columns are common data quality issues that can affect data analysis, modelling, and decision-making processes. This feature from DataDoctor provides an automated way to address and resolve such issues, saving significant time and effort compared to manual data cleaning.
 - The method intelligently identifies and resolves inconsistencies or conflicts in values by extracting the first part of each entry and discarding the rest, which is helpful when dealing with data where inconsistent or conflicting values might appear due to different formats or interpretations.
@@ -399,7 +399,7 @@ The `treat_encoding_errors()` method offers several advantages:
 - Proper Analysis - Correctly decoding the data is crucial for performing accurate analysis and extracting meaningful insights. Treating encoding errors allows for proper analysis and interpretation of the data.
 - Enhanced Data Quality - Fixing encoding errors improves the overall quality of the dataset by eliminating data artifacts caused by incorrect encoding.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 Using the `treat_encoding_errors()` feature from `DataDoctor()` is beneficial in scenarios where you encounter encoding errors in your dataset. By employing this feature, you can address and fix encoding issues, resulting in clean, correctly encoded data that is ready for further analysis or processing.
 
@@ -422,7 +422,7 @@ The advantages of using the `treat_inconsistent_date_and_time_formats()` method 
 - Data Integrity - Inconsistent date and time formats can introduce errors and inaccuracies in the dataset. The method improves data integrity and reliability by treating these inconsistencies, reducing the risk of incorrect analyses or interpretations.
 - Compatibility - Many data analysis and visualisation tools expect date and time values to be in specific formats. By standardising the formats, the treated dataset becomes more compatible with a wide range of tools and libraries, making it easier to perform further analysis or visualisation tasks.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `DataDoctor()` class and its associated methods, including `treat_inconsistent_date_and_time_formats()`, provide a comprehensive data treatment and cleaning toolkit. By using this feature, you can address inconsistencies in date and time formats in a dataset, ensuring data quality and preparing the dataset for downstream analysis. This method eliminates the need for manual and error-prone data formatting, as it automates the process of converting inconsistent date and time values to a standardised format.
 
@@ -446,7 +446,7 @@ Advantages:
 - Data Analysis - Consistent variable names facilitate data analysis tasks such as filtering, sorting, and grouping. With standardized names, you can easily reference and manipulate variables, simplifying the analysis process.
 - Compatibility - Many data analysis libraries and tools expect variables to follow specific naming conventions. By treating inconsistent variable names, you ensure compatibility with various analysis tools and frameworks, allowing seamless integration into data analysis workflows.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 The `treat_inconsistent_variable_names()` feature provided by the `DataDoctor()` class offers several benefits for data preprocessing and analysis:
 
@@ -475,7 +475,7 @@ Treating inconsistent capitalisation or punctuation in column names has several 
 - Compatibility - Standardised column names are more compatible with various data analysis and modelling tools, as they often rely on standardised naming conventions.
 - Data Integrity - Correcting inconsistent capitalisation or punctuation reduces the risk of creating duplicate columns or referencing the wrong column during data processing.
 
-Why use this feature from DataDoctor:
+Why use this feature from `DataDoctor()`:
 
 The `treat_inconsistent_capitalization_or_punctuation()` method provides an automated way to address inconsistent capitalisation or punctuation in column names. By using this feature, you can ensure that your dataset's column names adhere to consistent formatting standards, improving data quality and facilitating further data analysis and modelling tasks.
 
@@ -516,7 +516,7 @@ Advantages:
 - Data Accuracy - By replacing incorrect or misspelled values with the most similar valid value, the method improves the accuracy of the data.
 - Standardization - It helps to standardize the values in string columns, making them more consistent and facilitating data analysis and comparisons.
 
-Why use this feature from DataDoctor():
+Why use this feature from `DataDoctor()`:
 
 Using the `treat_spelling_or_typographical_errors()` feature from `DataDoctor()` can provide several benefits:
 
@@ -545,7 +545,7 @@ Advantage:
 
 The `generate_report()` method provides a concise summary of the data treatment process. It helps users understand the transformations applied to the data, identifies any issues or errors that were encountered, and provides transparency in the data treatment workflow. This report can be useful for auditing purposes, sharing information with stakeholders, or documenting the data treatment process.
 
-Why to use this feature from DataDoctor():
+Why to use this feature from `DataDoctor()`:
 
 The `generate_report()` feature from the DataDoctor class is beneficial because it allows users to quickly obtain an overview of the data treatment steps that have been applied. It provides a comprehensive summary of the actions taken to clean and preprocess the data, making it easier to understand the transformations made and the resulting data quality improvements. This report can be used to communicate the data treatment process to other team members, ensure reproducibility, and track the progress of data cleaning efforts.
 
