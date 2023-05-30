@@ -20,7 +20,7 @@ class DataDoctor:
     def load_data(self, data):
         self.df = data
 
-    def treat(self, file_name, inplace=False):
+    def treat(self, file_name, inplace=True):
         if not inplace:
             self.df = pd.read_csv(file_name)
         else:
