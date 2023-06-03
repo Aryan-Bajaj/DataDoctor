@@ -167,9 +167,6 @@ class DataDoctor:
         for step_num, step_report in enumerate(self.report, start=1):
             print(f"{step_report}")
 
-    def treat(self, file_name, inplace=False):
-        self.load_data(file_name)
-
         treatment_methods = [
             self.treat_missing_data,
             self.treat_duplicate_records,
